@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hunter's Projects</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/index.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/addproject.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="header"> <h1>New Project</h1> </div>
+    <div class="content">
+        <form action="{{ url_for('addProject') }}" method="POST" >
+            <label>Project Name: </label>
+            <input name="project-name"> </input>
+            <br />
+            <label>Project Description: </label>
+            <input name="project-description"> </input>
+            <br />
+            <label>Project Progess: </label>
+            <input name="project-progress"> </input>
+            <br />
+            <label>Project Checkpoints: </label>
+            <textarea name="checkpoints"></textarea>
+            <br />
+            <button type="submit">Save</button>
+        </form>
+
+
+    </div>
+</body>
+</html>

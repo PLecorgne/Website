@@ -1,0 +1,96 @@
+h1 {
+  font-size: 40 px;
+}
+
+li {
+  list-style-type: none;
+  text-align: left;
+}
+
+ul {
+  margin-block-start: 0px;
+  text-align: ;
+  outline: black solid thin;
+}
+
+tr {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+table {
+  border-collapse: collapse; 
+}
+
+body{
+  margin:0px;
+  background:#000;
+}
+
+.header {
+  height: 50 px;
+  width: auto;
+  border: 4px solid white;
+  background-color: #c0c0c0;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.content {
+  width: -moz-available;
+  background: #c0c0c0;
+  border: 1px solid #CCC;
+  height: 2000px;
+  margin: 20px auto;
+}
+
+.project-table {
+  width: inherit;
+  margin-left: 5px;
+  background-color: white;
+}
+
+.project-headers, .name-header, .date-header, .progress-header {
+  border: 1px solid black;
+  text-align: center;
+}
+
+td.progess, td.progress-header {
+  width: 70%;
+}
+
+.project-date{
+  margin: 10px 10px 10px 10px;
+}
+
+.vl {
+  position: relative;
+  border-left: 5px solid black;
+  height: 40px;
+  width: 5px;
+}
+
+.vl:hover {
+  border-left: 5px solid orange;
+}
+
+a.project-name{
+  border: 1px solid black;
+  padding: 5px 5px 5px 5px;
+  margin: 10px 10px 10px 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+td.name-date {
+  text-align: left;
+  vertical-align: top;
+}
+
+progress {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+

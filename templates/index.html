@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hunter's Projects</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/index.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="header"> <h1>Projects</h1> </div>
+
+    <div class="content">
+        <form>
+        <input type="button" value="Add Project" onclick="window.location.href='/projects/addproject'" />
+        </form>
+        <br />
+    <table id="project-table" class="project-table">
+        <thead>
+        <tr class="project-headers">
+            <td class="name-header"> Project Name: </td>
+            <td class="progress-header"> Project Completion: </td>
+            <td class="save-header"> Edit Project: </td>
+        </tr>
+        </thead>
+        <tbody id="project-table-body" class="project">
+          {{ tr|safe }}
+
+
+
+        </tbody>
+    </table>
+    </div>
+
+<script src="{{ url_for('static',filename='js/index.js') }}"> </script>
+</body>
+</html>
